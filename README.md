@@ -1,2 +1,2 @@
 # protractorJS
-Protractor using typescript
+Protractor using javascript
