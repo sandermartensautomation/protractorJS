@@ -1,0 +1,15 @@
+{
+  "name": "protractorjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pre-e2e": "webdriver-manager update && webdriver-manager start",
+    "e2e": "protractor protractor.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.4.2"
+  }
+}
