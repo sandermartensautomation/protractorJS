@@ -1,13 +1,15 @@
-var HomePage = require('../pages/HomePage');
+const HomePage = require('../pages/HomePage');
 
 describe('My first test', function () {
 
+    var homePage = new HomePage();
+
     beforeEach(async function () {
-        await HomePage.get();
+        await homePage.open();
     });
 
     it('this is a test', async function () {
-        await HomePage.setName('my name');
-        expect(await HomePage.getGreetingText()).toEqual('Hello my name!');
+        await homePage.setName('my name');
+        expect(await homePage.getGreetingText()).toEqual('Hello my name!');
     })
 })
